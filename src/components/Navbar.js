@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React, { useState } from "react";
 import logo from "./../assets/images/logo.svg";
 import { FaAlignJustify } from "react-icons/fa";
-
+// COMMENT
 function Navbar() {
   const [show, setShow] = useState(false);
   return (
