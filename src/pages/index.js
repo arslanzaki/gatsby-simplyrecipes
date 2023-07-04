@@ -12,7 +12,7 @@ export default function Home() {
             src="../assets/images/main.jpeg"
             alt="eggs"
             className="hero-img"
-            placeholder="tracedSVG"
+            placeholder="dominantColor"
             layout="fullWidth"
           />
           <div className="hero-container">
