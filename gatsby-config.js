@@ -8,8 +8,8 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-})
+  path: `.env.${process.env.NODE_ENV}`,
+});
 module.exports = {
   siteMetadata: {
     title: "Simply Recipes",
@@ -42,6 +42,23 @@ module.exports = {
         spaceId: `heuphgjq5zp4`,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_API_KEY,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Montserrat",
+              variants: ["400"],
+            },
+            {
+              family: "Inconsolata",
+              variants: ["400", "500", "600", "700"],
+            },
+          ],
+        },
       },
     },
   ],
