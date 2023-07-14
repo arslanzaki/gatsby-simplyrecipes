@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link, graphql } from "gatsby";
 import RecipesList from "../components/RecipesList";
+import SEO from "../components/SEO";
 
 function About({
   data: {
@@ -12,6 +13,7 @@ function About({
   console.log(recipes);
   return (
     <Layout>
+      <SEO title="About" description="This Is About Page"/>
       <main className="page">
         <section className="about-page">
           <article>
@@ -37,7 +39,7 @@ function About({
         </section>
         <section className="featured-recipes">
           <h5>Look at this Awesomesouce!</h5>
-          <RecipesList recipes={recipes}/>
+          <RecipesList recipes={recipes} />
         </section>
       </main>
     </Layout>
